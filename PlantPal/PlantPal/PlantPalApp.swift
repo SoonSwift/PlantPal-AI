@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct PlantPalApp: App {
+    // New comment
     var body: some Scene {
         WindowGroup {
             ContentView()
