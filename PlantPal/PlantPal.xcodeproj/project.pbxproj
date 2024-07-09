@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601BEE2C2C3D73D60081111C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE2B2C3D73D60081111C /* CustomButton.swift */; };
+		601BEE312C3D77080081111C /* WelcomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */; };
+		601BEE342C3D77A20081111C /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 601BEE332C3D77A20081111C /* KeychainSwift */; };
+		601BEE362C3DE1820081111C /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE352C3DE1820081111C /* ScanView.swift */; };
 		606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */; };
-		606BE3F92C3A89B80079F2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F82C3A89B80079F2D1 /* ContentView.swift */; };
+		606BE3F92C3A89B80079F2D1 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F82C3A89B80079F2D1 /* WelcomeScreen.swift */; };
 		606BE3FB2C3A89BB0079F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */; };
 		606BE3FE2C3A89BB0079F2D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */; };
+		60882CD52C3D6F8F00717A01 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */; };
+		60882CD62C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */; };
+		60882CD72C3D6F8F00717A01 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */; };
+		60882CD82C3D6F9000717A01 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD02C3D6F8F00717A01 /* Merriweather-BlackItalic.ttf */; };
+		60882CD92C3D6F9000717A01 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD12C3D6F8F00717A01 /* Merriweather-LightItalic.ttf */; };
+		60882CDA2C3D6F9000717A01 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD22C3D6F8F00717A01 /* Merriweather-Black.ttf */; };
+		60882CDB2C3D6F9000717A01 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */; };
+		60882CDC2C3D6F9000717A01 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD42C3D6F8F00717A01 /* Merriweather-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601BEE2B2C3D73D60081111C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewModel.swift; sourceTree = "<group>"; };
+		601BEE352C3DE1820081111C /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		606BE3F32C3A89B80079F2D1 /* PlantPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPalApp.swift; sourceTree = "<group>"; };
-		606BE3F82C3A89B80079F2D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		606BE3F82C3A89B80079F2D1 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		60882CD02C3D6F8F00717A01 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		60882CD12C3D6F8F00717A01 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		60882CD22C3D6F8F00717A01 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		60882CD42C3D6F8F00717A01 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		60882CDD2C3D6FD600717A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +50,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601BEE342C3D77A20081111C /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601BEE2D2C3D73DA0081111C /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE2B2C3D73D60081111C /* CustomButton.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		601BEE2E2C3D73E50081111C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE352C3DE1820081111C /* ScanView.swift */,
+				601BEE2D2C3D73DA0081111C /* ReusableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		601BEE2F2C3D73F00081111C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		606BE3EA2C3A89B80079F2D1 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */,
-				606BE3F82C3A89B80079F2D1 /* ContentView.swift */,
+				606BE3F82C3A89B80079F2D1 /* WelcomeScreen.swift */,
+				601BEE2F2C3D73F00081111C /* ViewModel */,
+				601BEE2E2C3D73E50081111C /* View */,
+				60882CCC2C3D6F0F00717A01 /* Font */,
+				60882CDD2C3D6FD600717A01 /* Info.plist */,
 				606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */,
 				606BE3FC2C3A89BB0079F2D1 /* Preview Content */,
 			);
@@ -65,6 +119,21 @@
 				606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60882CCC2C3D6F0F00717A01 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				60882CD22C3D6F8F00717A01 /* Merriweather-Black.ttf */,
+				60882CD02C3D6F8F00717A01 /* Merriweather-BlackItalic.ttf */,
+				60882CD42C3D6F8F00717A01 /* Merriweather-Bold.ttf */,
+				60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */,
+				60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */,
+				60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */,
+				60882CD12C3D6F8F00717A01 /* Merriweather-LightItalic.ttf */,
+				60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +152,9 @@
 			dependencies = (
 			);
 			name = PlantPal;
+			packageProductDependencies = (
+				601BEE332C3D77A20081111C /* KeychainSwift */,
+			);
 			productName = PlantPal;
 			productReference = 606BE3F32C3A89B80079F2D1 /* PlantPal.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 606BE3EA2C3A89B80079F2D1;
+			packageReferences = (
+				601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 606BE3F42C3A89B80079F2D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +201,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				606BE3FE2C3A89BB0079F2D1 /* Preview Assets.xcassets in Resources */,
+				60882CD92C3D6F9000717A01 /* Merriweather-LightItalic.ttf in Resources */,
+				60882CDC2C3D6F9000717A01 /* Merriweather-Bold.ttf in Resources */,
+				60882CD82C3D6F9000717A01 /* Merriweather-BlackItalic.ttf in Resources */,
+				60882CDA2C3D6F9000717A01 /* Merriweather-Black.ttf in Resources */,
+				60882CD52C3D6F8F00717A01 /* Merriweather-Italic.ttf in Resources */,
+				60882CD62C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf in Resources */,
 				606BE3FB2C3A89BB0079F2D1 /* Assets.xcassets in Resources */,
+				60882CDB2C3D6F9000717A01 /* Merriweather-Regular.ttf in Resources */,
+				60882CD72C3D6F8F00717A01 /* Merriweather-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606BE3F92C3A89B80079F2D1 /* ContentView.swift in Sources */,
+				606BE3F92C3A89B80079F2D1 /* WelcomeScreen.swift in Sources */,
+				601BEE2C2C3D73D60081111C /* CustomButton.swift in Sources */,
+				601BEE362C3DE1820081111C /* ScanView.swift in Sources */,
 				606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */,
+				601BEE312C3D77080081111C /* WelcomeScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +361,7 @@
 				DEVELOPMENT_TEAM = A3SK267PDF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlantPal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +391,7 @@
 				DEVELOPMENT_TEAM = A3SK267PDF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlantPal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		601BEE332C3D77A20081111C /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 606BE3EB2C3A89B80079F2D1 /* Project object */;
 }

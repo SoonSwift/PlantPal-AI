@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct PlantPalApp: App {
+    // MARK: - PROPERTIES
+    @StateObject private var viewModel = WelcomeScreenViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if viewModel.savedApiKey.isEmpty == false {
+                ScanView()
+                    .environmentObject(viewModel)
+                
+            } else {
+                WelcomeScreen()
+                    .environmentObject(viewModel)
+            }
         }
     }
 }
