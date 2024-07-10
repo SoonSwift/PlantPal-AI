@@ -1,52 +1,41 @@
-//
-//  WelcomeScreenViewModel.swift
-//  PlantPal
-//
-//  Created by Marcin Dytko on 09/07/2024.
-//
-
-import Foundation
-import KeychainSwift
 import SwiftUI
+import KeychainSwift
 
 class WelcomeScreenViewModel: ObservableObject {
     // MARK: - PROPERTIES
     @Published var apiKey = ""
-    @Published var savedApiKey = ""
     @Published var isApiKeyValid: Bool = true
+    @AppStorage("isKeyValidAndSaved") var isKeyValidAndSaved = false
 
-    private let keyChain = KeychainSwift()
-    private let apiKeyKey = "apiKey"
+    private let keychainService: KeychainService
     
-    init() {
+    init(keychainService: KeychainService) {
+        self.keychainService = keychainService
         loadApiKey()
     }
     
     func saveKey() {
         validateApiKey()
         if isApiKeyValid {
-            keyChain.set(apiKey, forKey: apiKeyKey)
-            loadApiKey()
-            print(savedApiKey)
+            keychainService.saveApiKey(apiKey)
+            isKeyValidAndSaved = true
         }
     }
     
     func loadApiKey() {
-        if let savedApiKey = keyChain.get(apiKeyKey) {
-            self.savedApiKey = savedApiKey
+        if let savedApiKey = keychainService.loadApiKey() {
+            self.apiKey = savedApiKey
         }
     }
-    // for tests
+    // MARK: - TEST FUNC
     func deleteKey() {
-        keyChain.delete(apiKeyKey)
+        keychainService.deleteApiKey()
         apiKey = ""
-        savedApiKey = ""
         isApiKeyValid = true
+        isKeyValidAndSaved = false
     }
     
-    
     private func validateApiKey() {
-          isApiKeyValid = !apiKey.isEmpty && apiKey.count >= 10
-      }
-    
+        isApiKeyValid = !apiKey.isEmpty && apiKey.count >= 10
+    }
 }

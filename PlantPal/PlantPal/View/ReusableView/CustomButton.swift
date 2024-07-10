@@ -8,23 +8,32 @@
 import SwiftUI
 
 struct CustomButton: View {
-    var title: String
-    var action: () -> Void
+    // MARK: - PROPERTIES
+
+    private let title: String
+    private let action: () -> Void
     
-    
+    init(title: String, action: @escaping () -> Void) {
+        self.title = title
+        self.action = action
+    }
+    // MARK: - BODY
+
     var body: some View {
         Button(action: {
             self.action()
-        }) {
+        }
+        ){
             Text(title)
                 .font(.custom("Merriweather-Regular", size: 18))
                 .padding(.all, 15)
                 .padding(.horizontal, 30)
-                .foregroundColor(Color("PlantColor"))
-                .border(Color("PlantColor"), width: 3)
+                .foregroundColor(Color(.plant))
+                .border(Color(.plant), width: 3)
         }
     }
 }
+// MARK: - PREVIEW
 
 #Preview {
     CustomButton(title: "Let's go!", action: {})

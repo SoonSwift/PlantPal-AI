@@ -8,7 +8,7 @@
 import SwiftUI
 // MARK: - VIEW
 
-struct WelcomeScreen: View {
+struct WelcomeScreenView: View {
     // MARK: - Properties
     
     @EnvironmentObject private var viewModel: WelcomeScreenViewModel
@@ -16,13 +16,10 @@ struct WelcomeScreen: View {
     // MARK: - BODY
     var body: some View {
         NavigationStack {
-            ZStack {
-                
-                Color("BackgroundColor")
-                    .ignoresSafeArea()
+            MainStack {
                 
                 VStack {
-                    Image("Plant")
+                    Image(.plant)
                     
                     Text("PlantPal AI")
                         .font(.custom("Merriweather-Regular", size: 32))
@@ -56,13 +53,13 @@ struct WelcomeScreen: View {
                     VStack(alignment: .leading) {
                         
                         Text("OpenAI Api key")
-                            .padding([.top,.horizontal], 8)
+                            .padding([.top, .horizontal], 8)
                             .font(.custom("Merriweather-Regular", size: 12))
                         
                         TextField("sk-proj-***************************", text: $viewModel.apiKey)
                             .textFieldStyle(.plain)
                             .padding(8)
-                            .background(Color("BackgroundColor"))
+                            .background(Color(.background))
                             .border(viewModel.isApiKeyValid ? .black : .red, width: 1)
                             .padding(.horizontal, 8)
                         
@@ -77,6 +74,7 @@ struct WelcomeScreen: View {
                     CustomButton(title: "Let's go") {
                         viewModel.saveKey()
                     }
+                    .padding(.top, 32)
                 }
             }
         }
@@ -86,6 +84,6 @@ struct WelcomeScreen: View {
 // MARK: - PREVIEW
 
 #Preview {
-    WelcomeScreen()
-        .environmentObject(WelcomeScreenViewModel())
+    WelcomeScreenView()
+        .environmentObject(WelcomeScreenViewModel(keychainService: KeychainService()))
 }
