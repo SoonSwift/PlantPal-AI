@@ -5,10 +5,11 @@ class WelcomeScreenViewModel: ObservableObject {
     // MARK: - PROPERTIES
     @Published var apiKey = ""
     @Published var isApiKeyValid: Bool = true
+    @AppStorage("isKeyValidAndSaved") var isKeyValidAndSaved = false
 
-    private let keychainService: ApiKeyServiceInterface
+    private let keychainService: KeychainService
     
-    init(keychainService: ApiKeyService) {
+    init(keychainService: KeychainService) {
         self.keychainService = keychainService
         loadApiKey()
     }
