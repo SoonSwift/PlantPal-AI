@@ -11,7 +11,11 @@ import SwiftUI
 struct WelcomeScreenView: View {
     // MARK: - Properties
     
-    @EnvironmentObject private var viewModel: WelcomeScreenViewModel
+    private var viewModel: WelcomeScreenViewModel
+    
+    init(viewModel: WelcomeScreenViewModel) {
+        self.viewModel = viewModel
+    }
     
     // MARK: - BODY
     var body: some View {

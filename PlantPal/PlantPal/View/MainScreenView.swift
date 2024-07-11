@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    @EnvironmentObject var viewModel: WelcomeScreenViewModel
+//    var viewModel: WelcomeScreenViewModel
     
     var body: some View {
         MainStack {
             VStack {
                 Text("\(viewModel.apiKey)")
                 Button("Delete") {
-                    viewModel.deleteKey()
+//                    viewModel.deleteKey()
                 }
             }
             .onAppear {
-                viewModel.loadApiKey()
+//                viewModel.loadApiKey()
             }
         }
     }
@@ -27,5 +27,4 @@ struct MainScreenView: View {
 
 #Preview {
     MainScreenView()
-        .environmentObject(WelcomeScreenViewModel(keychainService: KeychainService()))
 }
