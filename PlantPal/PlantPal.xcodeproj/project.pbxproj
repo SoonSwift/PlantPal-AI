@@ -12,7 +12,7 @@
 		601BEE342C3D77A20081111C /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 601BEE332C3D77A20081111C /* KeychainSwift */; };
 		601BEE362C3DE1820081111C /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE352C3DE1820081111C /* MainScreenView.swift */; };
 		603C3EF32C3E86C600BD7A88 /* MainStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C3EF22C3E86C600BD7A88 /* MainStack.swift */; };
-		603C3EF52C3E8A4E00BD7A88 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C3EF42C3E8A4E00BD7A88 /* KeychainService.swift */; };
+		603C3EF52C3E8A4E00BD7A88 /* ApiKeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C3EF42C3E8A4E00BD7A88 /* ApiKeyService.swift */; };
 		606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */; };
 		606BE3F92C3A89B80079F2D1 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */; };
 		606BE3FB2C3A89BB0079F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */; };
@@ -32,7 +32,7 @@
 		601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewModel.swift; sourceTree = "<group>"; };
 		601BEE352C3DE1820081111C /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		603C3EF22C3E86C600BD7A88 /* MainStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStack.swift; sourceTree = "<group>"; };
-		603C3EF42C3E8A4E00BD7A88 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		603C3EF42C3E8A4E00BD7A88 /* ApiKeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyService.swift; sourceTree = "<group>"; };
 		606BE3F32C3A89B80079F2D1 /* PlantPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPalApp.swift; sourceTree = "<group>"; };
 		606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
@@ -79,13 +79,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		601BEE2F2C3D73F00081111C /* ViewModel */ = {
+		601BEE2F2C3D73F00081111C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */,
-				603C3EF42C3E8A4E00BD7A88 /* KeychainService.swift */,
+				603C3EF42C3E8A4E00BD7A88 /* ApiKeyService.swift */,
 			);
-			path = ViewModel;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		606BE3EA2C3A89B80079F2D1 = {
@@ -108,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */,
-				606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */,
-				601BEE2F2C3D73F00081111C /* ViewModel */,
+				880C84202C4078D500D56DF7 /* WelcomeScreen */,
+				601BEE2F2C3D73F00081111C /* Services */,
 				601BEE2E2C3D73E50081111C /* View */,
 				60882CCC2C3D6F0F00717A01 /* Font */,
 				60882CDD2C3D6FD600717A01 /* Info.plist */,
@@ -140,6 +139,15 @@
 				60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		880C84202C4078D500D56DF7 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */,
+				606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */,
+			);
+			path = WelcomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +240,7 @@
 				601BEE2C2C3D73D60081111C /* CustomButton.swift in Sources */,
 				601BEE362C3DE1820081111C /* MainScreenView.swift in Sources */,
 				606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */,
-				603C3EF52C3E8A4E00BD7A88 /* KeychainService.swift in Sources */,
+				603C3EF52C3E8A4E00BD7A88 /* ApiKeyService.swift in Sources */,
 				601BEE312C3D77080081111C /* WelcomeScreenViewModel.swift in Sources */,
 				603C3EF32C3E86C600BD7A88 /* MainStack.swift in Sources */,
 			);
