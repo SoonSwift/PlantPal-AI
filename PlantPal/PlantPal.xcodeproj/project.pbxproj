@@ -17,6 +17,7 @@
 		606BE3F92C3A89B80079F2D1 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */; };
 		606BE3FB2C3A89BB0079F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */; };
 		606BE3FE2C3A89BB0079F2D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */; };
+		6082FCCD2C428E270027F1AD /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082FCCC2C428E270027F1AD /* MainScreenViewModel.swift */; };
 		60882CD52C3D6F8F00717A01 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */; };
 		60882CD62C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */; };
 		60882CD72C3D6F8F00717A01 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */; };
@@ -38,6 +39,7 @@
 		606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6082FCCC2C428E270027F1AD /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
 		60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
 		60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
@@ -73,7 +75,6 @@
 		601BEE2E2C3D73E50081111C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				601BEE352C3DE1820081111C /* MainScreenView.swift */,
 				601BEE2D2C3D73DA0081111C /* ReusableView */,
 			);
 			path = View;
@@ -107,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */,
+				6082FCC92C428DE20027F1AD /* MainScreen */,
 				880C84202C4078D500D56DF7 /* WelcomeScreen */,
 				601BEE2F2C3D73F00081111C /* Services */,
 				601BEE2E2C3D73E50081111C /* View */,
@@ -124,6 +126,15 @@
 				606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6082FCC92C428DE20027F1AD /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE352C3DE1820081111C /* MainScreenView.swift */,
+				6082FCCC2C428E270027F1AD /* MainScreenViewModel.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 		60882CCC2C3D6F0F00717A01 /* Font */ = {
@@ -241,6 +252,7 @@
 				601BEE362C3DE1820081111C /* MainScreenView.swift in Sources */,
 				606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */,
 				603C3EF52C3E8A4E00BD7A88 /* ApiKeyService.swift in Sources */,
+				6082FCCD2C428E270027F1AD /* MainScreenViewModel.swift in Sources */,
 				601BEE312C3D77080081111C /* WelcomeScreenViewModel.swift in Sources */,
 				603C3EF32C3E86C600BD7A88 /* MainStack.swift in Sources */,
 			);

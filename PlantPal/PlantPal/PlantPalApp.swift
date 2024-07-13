@@ -10,15 +10,19 @@ import SwiftUI
 @main
 struct PlantPalApp: App {
     // MARK: - PROPERTIES
-    let apiKeyService: ApiKeyServiceInterface = ApiKeyService()
+    @StateObject var viewModel: WelcomeScreenViewModel = 
+    WelcomeScreenViewModel(keychainService: ApiKeyService())
 
     var body: some Scene {
         WindowGroup {
             // Poczytaj o tym jak obserwować wartość klucza
-            if apiKeyService.get() != nil {
+            if viewModel.loadApiKey() {
                 MainScreenView()
             } else {
-                WelcomeScreenView()
+                WelcomeScreenView(viewModel: viewModel)
+                    .onAppear {
+                        viewModel.loadApiKey()
+                    }
             }
         }
     }

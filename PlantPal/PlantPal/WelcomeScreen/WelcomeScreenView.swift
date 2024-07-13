@@ -11,7 +11,7 @@ import SwiftUI
 struct WelcomeScreenView: View {
     // MARK: - Properties
     
-    @EnvironmentObject private var viewModel: WelcomeScreenViewModel
+    @ObservedObject var viewModel: WelcomeScreenViewModel
     
     // MARK: - BODY
     var body: some View {
@@ -84,6 +84,5 @@ struct WelcomeScreenView: View {
 // MARK: - PREVIEW
 
 #Preview {
-    WelcomeScreenView()
-        .environmentObject(WelcomeScreenViewModel(keychainService: KeychainService()))
+    WelcomeScreenView(viewModel: WelcomeScreenViewModel(keychainService: ApiKeyService()))
 }

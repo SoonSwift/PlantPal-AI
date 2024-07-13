@@ -5,34 +5,51 @@ class WelcomeScreenViewModel: ObservableObject {
     // MARK: - PROPERTIES
     @Published var apiKey = ""
     @Published var isApiKeyValid: Bool = true
-    @AppStorage("isKeyValidAndSaved") var isKeyValidAndSaved = false
 
-    private let keychainService: KeychainService
-    
-    init(keychainService: KeychainService) {
+    private let keychainService: ApiKeyService
+    private var isLoadingKey = false
+
+    init(keychainService: ApiKeyService) {
         self.keychainService = keychainService
-        loadApiKey()
     }
     
     func saveKey() {
         validateApiKey()
         if isApiKeyValid {
-            keychainService.saveApiKey(apiKey)
-            isKeyValidAndSaved = true
+            keychainService.save(apiKey)
+            loadApiKey()
         }
     }
     
-    func loadApiKey() {
-        if let savedApiKey = keychainService.loadApiKey() {
-            self.apiKey = savedApiKey
+    @discardableResult
+    func loadApiKey() -> Bool {
+        guard !isLoadingKey else {
+            print("loadApiKey skipped because isLoadingKey is true")
+            return false
         }
+        
+        isLoadingKey = true
+        defer { isLoadingKey = false }
+        
+        if let savedApiKey = keychainService.get() {
+            DispatchQueue.main.async {
+                if self.apiKey != savedApiKey {
+                    self.apiKey = savedApiKey
+                    print("apiKey loaded and set to: \(savedApiKey)")
+                }
+            }
+            return true
+        }
+        return false
     }
+    
     // MARK: - TEST FUNC
     func deleteKey() {
-        keychainService.deleteApiKey()
-        apiKey = ""
-        isApiKeyValid = true
-        isKeyValidAndSaved = false
+        keychainService.delete()
+        DispatchQueue.main.async {
+            self.apiKey = ""
+            self.isApiKeyValid = true
+        }
     }
     
     private func validateApiKey() {
