@@ -6,49 +6,17 @@ class WelcomeScreenViewModel: ObservableObject {
     @Published var apiKey = ""
     @Published var isApiKeyValid: Bool = true
 
-    private let keychainService: ApiKeyService
+    private let apiKeyService: any ApiKeyServiceInterface
     private var isLoadingKey = false
 
-    init(keychainService: ApiKeyService) {
-        self.keychainService = keychainService
+    init(apiKeyService: any ApiKeyServiceInterface) {
+        self.apiKeyService = apiKeyService
     }
     
     func saveKey() {
         validateApiKey()
         if isApiKeyValid {
-            keychainService.save(apiKey)
-            loadApiKey()
-        }
-    }
-    
-    @discardableResult
-    func loadApiKey() -> Bool {
-        guard !isLoadingKey else {
-            print("loadApiKey skipped because isLoadingKey is true")
-            return false
-        }
-        
-        isLoadingKey = true
-        defer { isLoadingKey = false }
-        
-        if let savedApiKey = keychainService.get() {
-            DispatchQueue.main.async {
-                if self.apiKey != savedApiKey {
-                    self.apiKey = savedApiKey
-                    print("apiKey loaded and set to: \(savedApiKey)")
-                }
-            }
-            return true
-        }
-        return false
-    }
-    
-    // MARK: - TEST FUNC
-    func deleteKey() {
-        keychainService.delete()
-        DispatchQueue.main.async {
-            self.apiKey = ""
-            self.isApiKeyValid = true
+            apiKeyService.save(apiKey)
         }
     }
     

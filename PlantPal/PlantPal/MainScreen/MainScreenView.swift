@@ -8,26 +8,16 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    // THIS MODEL IS FOR TEST IT WILL BE REMOVED IN NEXT TASK
-//    @ObservedObject var viewModel: WelcomeScreenViewModel
+    @ObservedObject var viewModel: MainScreenViewModel
     
     var body: some View {
         MainStack {
             VStack {
-                
-                
-                Text("R")
+                Text("MainScreen")
                 Button("Delete") {
-//                    viewModel.deleteKey()
+                    viewModel.deleteKey()
                 }
-            }
-            .onAppear {
-//                viewModel.loadApiKey()
             }
         }
     }
-}
-
-#Preview {
-    MainScreenView()
 }

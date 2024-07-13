@@ -8,5 +8,13 @@
 import Foundation
 
 class MainScreenViewModel: ObservableObject {
+    private let apiKeyService: any ApiKeyServiceInterface
     
+    init(apiKeyService: any ApiKeyServiceInterface) {
+        self.apiKeyService = apiKeyService
+    }
+    
+    func deleteKey() {
+        apiKeyService.delete()
+    }
 }

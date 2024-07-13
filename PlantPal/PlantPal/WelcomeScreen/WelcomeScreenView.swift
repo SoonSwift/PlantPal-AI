@@ -17,7 +17,6 @@ struct WelcomeScreenView: View {
     var body: some View {
         NavigationStack {
             MainStack {
-                
                 VStack {
                     Image(.plant)
                     
@@ -79,10 +78,4 @@ struct WelcomeScreenView: View {
             }
         }
     }
-}
-
-// MARK: - PREVIEW
-
-#Preview {
-    WelcomeScreenView(viewModel: WelcomeScreenViewModel(keychainService: ApiKeyService()))
 }
