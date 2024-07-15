@@ -211,6 +211,7 @@
 			mainGroup = 606BE3EA2C3A89B80079F2D1;
 			packageReferences = (
 				601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				60A0E3C52C45389400587225 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 606BE3F42C3A89B80079F2D1 /* Products */;
 			projectDirPath = "";
@@ -481,6 +482,14 @@
 			};
 		};
 		604E278E2C3DF25D00879EFF /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+		60A0E3C52C45389400587225 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint?tab=readme-ov-file";
 			requirement = {

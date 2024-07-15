@@ -29,7 +29,10 @@ struct WelcomeScreenView: View {
                         .padding(.bottom, 4)
                     
                     Divider()
+                        .background(.divider)
+                        .frame(width: 336)
                         .padding(.bottom, 8)
+                    
                     
                     Text("""
                     Discover the world of plants at your
@@ -49,26 +52,8 @@ struct WelcomeScreenView: View {
                     """)
                     .font(.custom("Merriweather-Regular", size: 16))
                     .multilineTextAlignment(.center)
-                    VStack(alignment: .leading) {
-                        
-                        Text("OpenAI Api key")
-                            .padding([.top, .horizontal], 8)
-                            .font(.custom("Merriweather-Regular", size: 12))
-                        
-                        TextField("sk-proj-***************************", text: $viewModel.apiKey)
-                            .textFieldStyle(.plain)
-                            .padding(8)
-                            .background(Color(.background))
-                            .border(viewModel.isApiKeyValid ? .black : .red, width: 1)
-                            .padding(.horizontal, 8)
-                        
-                        if viewModel.isApiKeyValid == false {
-                            Text("Key is invalid")
-                                .padding(.horizontal, 8)
-                                .foregroundColor(.red)
-                                .font(.custom("Merriweather-Regular", size: 12))
-                        }
-                    }
+
+                    buildInputView()
                     
                     CustomButton(title: "Let's go") {
                         viewModel.saveKey()
@@ -78,4 +63,37 @@ struct WelcomeScreenView: View {
             }
         }
     }
+    // MARK: - PRIVATE FUNCS
+    
+    private func buildInputView() -> some View {
+        VStack(alignment: .leading) {
+            
+            // InputTitle
+            Text("OpenAI Api key")
+                .padding([.top, .horizontal], 8)
+                .font(.custom("Merriweather-Regular", size: 12))
+            
+            // TextField
+            TextField("sk-proj-***************************", text: $viewModel.apiKey)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+                .textFieldStyle(.plain)
+                .padding(8)
+                .background(Color(.background))
+                .border(viewModel.isApiKeyValid ? .black : .red, width: 1)
+                .padding(.horizontal, 8)
+            
+            // Error Message
+            if viewModel.isApiKeyValid == false {
+                Text("Key is invalid")
+                    .padding(.horizontal, 8)
+                    .foregroundColor(.red)
+                    .font(.custom("Merriweather-Regular", size: 12))
+            }
+        }
+    }
+}
+
+#Preview {
+    WelcomeScreenView(viewModel: WelcomeScreenViewModel(apiKeyService: ApiKeyService()))
 }

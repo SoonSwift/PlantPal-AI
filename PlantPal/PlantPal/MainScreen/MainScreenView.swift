@@ -21,3 +21,7 @@ struct MainScreenView: View {
         }
     }
 }
+
+#Preview {
+    MainScreenView(viewModel: MainScreenViewModel(apiKeyService: ApiKeyService()))
+}
