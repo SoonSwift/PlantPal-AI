@@ -28,11 +28,7 @@ struct WelcomeScreenView: View {
                         .font(.custom("Merriweather-Regular", size: 18))
                         .padding(.bottom, 4)
                     
-                    Divider()
-                        .background(.divider)
-                        .frame(width: 336)
-                        .padding(.bottom, 8)
-                    
+                    PalDivider()
                     
                     Text("""
                     Discover the world of plants at your
@@ -68,12 +64,10 @@ struct WelcomeScreenView: View {
     private func buildInputView() -> some View {
         VStack(alignment: .leading) {
             
-            // InputTitle
             Text("OpenAI Api key")
                 .padding([.top, .horizontal], 8)
                 .font(.custom("Merriweather-Regular", size: 12))
             
-            // TextField
             TextField("sk-proj-***************************", text: $viewModel.apiKey)
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
@@ -83,7 +77,6 @@ struct WelcomeScreenView: View {
                 .border(viewModel.isApiKeyValid ? .black : .red, width: 1)
                 .padding(.horizontal, 8)
             
-            // Error Message
             if viewModel.isApiKeyValid == false {
                 Text("Key is invalid")
                     .padding(.horizontal, 8)
