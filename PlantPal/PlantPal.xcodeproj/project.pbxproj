@@ -7,18 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601BEE2C2C3D73D60081111C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE2B2C3D73D60081111C /* CustomButton.swift */; };
+		601BEE312C3D77080081111C /* WelcomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */; };
+		601BEE342C3D77A20081111C /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 601BEE332C3D77A20081111C /* KeychainSwift */; };
+		601BEE362C3DE1820081111C /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BEE352C3DE1820081111C /* MainScreenView.swift */; };
+		603C3EF32C3E86C600BD7A88 /* MainStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C3EF22C3E86C600BD7A88 /* MainStack.swift */; };
+		603C3EF52C3E8A4E00BD7A88 /* ApiKeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C3EF42C3E8A4E00BD7A88 /* ApiKeyService.swift */; };
 		606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */; };
-		606BE3F92C3A89B80079F2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F82C3A89B80079F2D1 /* ContentView.swift */; };
+		606BE3F92C3A89B80079F2D1 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */; };
 		606BE3FB2C3A89BB0079F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */; };
 		606BE3FE2C3A89BB0079F2D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */; };
+		6082FCCD2C428E270027F1AD /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082FCCC2C428E270027F1AD /* MainScreenViewModel.swift */; };
+		60882CD52C3D6F8F00717A01 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */; };
+		60882CD62C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */; };
+		60882CD72C3D6F8F00717A01 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */; };
+		60882CD82C3D6F9000717A01 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD02C3D6F8F00717A01 /* Merriweather-BlackItalic.ttf */; };
+		60882CD92C3D6F9000717A01 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD12C3D6F8F00717A01 /* Merriweather-LightItalic.ttf */; };
+		60882CDA2C3D6F9000717A01 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD22C3D6F8F00717A01 /* Merriweather-Black.ttf */; };
+		60882CDB2C3D6F9000717A01 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */; };
+		60882CDC2C3D6F9000717A01 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60882CD42C3D6F8F00717A01 /* Merriweather-Bold.ttf */; };
+		60A0E3C92C4937F500587225 /* PalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A0E3C82C4937F500587225 /* PalDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601BEE2B2C3D73D60081111C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewModel.swift; sourceTree = "<group>"; };
+		601BEE352C3DE1820081111C /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		603C3EF22C3E86C600BD7A88 /* MainStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStack.swift; sourceTree = "<group>"; };
+		603C3EF42C3E8A4E00BD7A88 /* ApiKeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyService.swift; sourceTree = "<group>"; };
 		606BE3F32C3A89B80079F2D1 /* PlantPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPalApp.swift; sourceTree = "<group>"; };
-		606BE3F82C3A89B80079F2D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6082FCCC2C428E270027F1AD /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		60882CD02C3D6F8F00717A01 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		60882CD12C3D6F8F00717A01 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		60882CD22C3D6F8F00717A01 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		60882CD42C3D6F8F00717A01 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		60882CDD2C3D6FD600717A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A0E3C82C4937F500587225 /* PalDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +58,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601BEE342C3D77A20081111C /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601BEE2D2C3D73DA0081111C /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE2B2C3D73D60081111C /* CustomButton.swift */,
+				603C3EF22C3E86C600BD7A88 /* MainStack.swift */,
+				60A0E3C82C4937F500587225 /* PalDivider.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		601BEE2E2C3D73E50081111C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE2D2C3D73DA0081111C /* ReusableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		601BEE2F2C3D73F00081111C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				603C3EF42C3E8A4E00BD7A88 /* ApiKeyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		606BE3EA2C3A89B80079F2D1 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				606BE3F62C3A89B80079F2D1 /* PlantPalApp.swift */,
-				606BE3F82C3A89B80079F2D1 /* ContentView.swift */,
+				6082FCC92C428DE20027F1AD /* MainScreen */,
+				880C84202C4078D500D56DF7 /* WelcomeScreen */,
+				601BEE2F2C3D73F00081111C /* Services */,
+				601BEE2E2C3D73E50081111C /* View */,
+				60882CCC2C3D6F0F00717A01 /* Font */,
+				60882CDD2C3D6FD600717A01 /* Info.plist */,
 				606BE3FA2C3A89BB0079F2D1 /* Assets.xcassets */,
 				606BE3FC2C3A89BB0079F2D1 /* Preview Content */,
 			);
@@ -65,6 +129,39 @@
 				606BE3FD2C3A89BB0079F2D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6082FCC92C428DE20027F1AD /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE352C3DE1820081111C /* MainScreenView.swift */,
+				6082FCCC2C428E270027F1AD /* MainScreenViewModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		60882CCC2C3D6F0F00717A01 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				60882CD22C3D6F8F00717A01 /* Merriweather-Black.ttf */,
+				60882CD02C3D6F8F00717A01 /* Merriweather-BlackItalic.ttf */,
+				60882CD42C3D6F8F00717A01 /* Merriweather-Bold.ttf */,
+				60882CCE2C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf */,
+				60882CCD2C3D6F8F00717A01 /* Merriweather-Italic.ttf */,
+				60882CCF2C3D6F8F00717A01 /* Merriweather-Light.ttf */,
+				60882CD12C3D6F8F00717A01 /* Merriweather-LightItalic.ttf */,
+				60882CD32C3D6F8F00717A01 /* Merriweather-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		880C84202C4078D500D56DF7 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				601BEE302C3D77080081111C /* WelcomeScreenViewModel.swift */,
+				606BE3F82C3A89B80079F2D1 /* WelcomeScreenView.swift */,
+			);
+			path = WelcomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,8 +178,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				604E27942C3DF27400879EFF /* PBXTargetDependency */,
 			);
 			name = PlantPal;
+			packageProductDependencies = (
+				601BEE332C3D77A20081111C /* KeychainSwift */,
+			);
 			productName = PlantPal;
 			productReference = 606BE3F32C3A89B80079F2D1 /* PlantPal.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +212,10 @@
 				Base,
 			);
 			mainGroup = 606BE3EA2C3A89B80079F2D1;
+			packageReferences = (
+				601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				60A0E3C52C45389400587225 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 606BE3F42C3A89B80079F2D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +231,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				606BE3FE2C3A89BB0079F2D1 /* Preview Assets.xcassets in Resources */,
+				60882CD92C3D6F9000717A01 /* Merriweather-LightItalic.ttf in Resources */,
+				60882CDC2C3D6F9000717A01 /* Merriweather-Bold.ttf in Resources */,
+				60882CD82C3D6F9000717A01 /* Merriweather-BlackItalic.ttf in Resources */,
+				60882CDA2C3D6F9000717A01 /* Merriweather-Black.ttf in Resources */,
+				60882CD52C3D6F8F00717A01 /* Merriweather-Italic.ttf in Resources */,
+				60882CD62C3D6F8F00717A01 /* Merriweather-BoldItalic.ttf in Resources */,
 				606BE3FB2C3A89BB0079F2D1 /* Assets.xcassets in Resources */,
+				60882CDB2C3D6F9000717A01 /* Merriweather-Regular.ttf in Resources */,
+				60882CD72C3D6F8F00717A01 /* Merriweather-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +250,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606BE3F92C3A89B80079F2D1 /* ContentView.swift in Sources */,
+				606BE3F92C3A89B80079F2D1 /* WelcomeScreenView.swift in Sources */,
+				601BEE2C2C3D73D60081111C /* CustomButton.swift in Sources */,
+				601BEE362C3DE1820081111C /* MainScreenView.swift in Sources */,
 				606BE3F72C3A89B80079F2D1 /* PlantPalApp.swift in Sources */,
+				603C3EF52C3E8A4E00BD7A88 /* ApiKeyService.swift in Sources */,
+				6082FCCD2C428E270027F1AD /* MainScreenViewModel.swift in Sources */,
+				601BEE312C3D77080081111C /* WelcomeScreenViewModel.swift in Sources */,
+				603C3EF32C3E86C600BD7A88 /* MainStack.swift in Sources */,
+				60A0E3C92C4937F500587225 /* PalDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		604E27942C3DF27400879EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 604E27932C3DF27400879EFF /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		606BE3FF2C3A89BB0079F2D1 /* Debug */ = {
@@ -275,11 +402,13 @@
 				DEVELOPMENT_TEAM = A3SK267PDF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlantPal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +433,13 @@
 				DEVELOPMENT_TEAM = A3SK267PDF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlantPal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +475,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+		604E278E2C3DF25D00879EFF /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+		60A0E3C52C45389400587225 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		601BEE332C3D77A20081111C /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601BEE322C3D77A20081111C /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		604E27932C3DF27400879EFF /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 604E278E2C3DF25D00879EFF /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 606BE3EB2C3A89B80079F2D1 /* Project object */;
 }

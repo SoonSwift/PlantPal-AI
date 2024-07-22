@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct PlantPalApp: App {
+    // MARK: - PROPERTIES
+    @ObservedObject var apiKeyService = ApiKeyService()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if apiKeyService.apiKeySet {
+                MainScreenView(viewModel: MainScreenViewModel(apiKeyService: apiKeyService))
+            } else {
+                WelcomeScreenView(
+                    viewModel: WelcomeScreenViewModel(apiKeyService: apiKeyService)
+                )
+            }
         }
     }
 }
