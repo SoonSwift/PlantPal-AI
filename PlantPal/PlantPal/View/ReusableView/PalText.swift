@@ -10,42 +10,37 @@ import SwiftUI
 // MARK: - PalText
 
 struct PalText: View {
-    private let text: String
-    private let fontType: FontType
-    private let size: CGFloat
+    
+    enum FontType: String {
+        case regular = "Merriweather-Regular"
+        case bold = "Merriweather-Bold"
+        case italic = "Merriweather-Italic"
+        case light = "Merriweather-Light"
+    }
 
-    init(text: String, fontType: FontType, size: CGFloat) {
+    enum FontSize: CGFloat {
+        case small = 12
+        case medium = 16
+        case large = 18
+        case extraLarge = 32
+    }
+    
+    var text: String
+    var fontType: FontType
+    var size: FontSize
+    
+    init(text: String, fontType: FontType, size: FontSize) {
         self.text = text
         self.fontType = fontType
         self.size = size
     }
-    
+
     var body: some View {
         Text(text)
-            .font(.custom(fontType.fontName, size: size))
-    }
-}
-
-enum FontType {
-    case regular
-    case bold
-    case italic
-    case light
-    
-    var fontName: String {
-        switch self {
-        case .regular:
-            return "Merriweather-Regular"
-        case .bold:
-            return "Merriweather-Bold"
-        case .italic:
-            return "Merriweather-Italic"
-        case .light:
-            return "Merriweather-Light"
-        }
+            .font(.custom(fontType.rawValue, size: size.rawValue))
     }
 }
 
 #Preview {
-    PalText(text: "da", fontType: .bold, size: 32)
+    PalText(text: "da", fontType: .bold, size: .extraLarge)
 }
