@@ -28,6 +28,7 @@ struct PalText: View {
     var text: String
     var fontType: FontType
     var size: FontSize
+    var color: Color = .primary
     
     init(text: String, fontType: FontType, size: FontSize) {
         self.text = text
@@ -38,6 +39,7 @@ struct PalText: View {
     var body: some View {
         Text(text)
             .font(.custom(fontType.rawValue, size: size.rawValue))
+            .foregroundColor(color)
     }
 }
 
