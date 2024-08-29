@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomButton: View {
+struct PalButton: View {
     // MARK: - PROPERTIES
 
     private let title: String
@@ -36,5 +36,5 @@ struct CustomButton: View {
 // MARK: - PREVIEW
 
 #Preview {
-    CustomButton(title: "Let's go!", action: {})
+    PalButton(title: "Let's go!", action: {})
 }

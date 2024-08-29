@@ -20,38 +20,34 @@ struct WelcomeScreenView: View {
                 VStack {
                     Image(.plant)
                     
-                    Text("PlantPal AI")
-                        .font(.custom("Merriweather-Regular", size: 32))
+                    PalText(text: "PlantPal AI", fontType: .regular, size: .extraLarge)
                         .padding(.bottom, 8)
                     
-                    Text("Your pocket botanist")
-                        .font(.custom("Merriweather-Regular", size: 18))
+                    PalText(text: "Your pocket botanist", fontType: .regular, size: .large)
                         .padding(.bottom, 4)
                     
                     PalDivider()
                     
-                    Text("""
-                    Discover the world of plants at your
-                    fingertips. Simply snap a photo, and
-                    PlantPal AI instantly identfies plant species
-                    """)
-                    .font(.custom("Merriweather-Light", size: 16))
+                    PalText(text: """
+                       Discover the world of plants at your
+                       fingertips. Simply snap a photo, and
+                       PlantPal AI instantly identifies plant species
+                       """, fontType: .light, size: .medium)
                     .multilineTextAlignment(.center)
                     .padding(.bottom)
                     
-                    Text("""
-                    We use OpenAI API. We do not charge any
-                    fees, so we need your ket to be able to
-                    recvie replies on your behalf
-                    
-                    We do not have access to your key!
-                    """)
-                    .font(.custom("Merriweather-Regular", size: 16))
+                    PalText(text: """
+                       We use OpenAI API. We do not charge any
+                       fees, so we need your key to be able to
+                       receive replies on your behalf
+                       
+                       We do not have access to your key!
+                       """, fontType: .regular, size: .medium)
                     .multilineTextAlignment(.center)
-
+                    
                     buildInputView()
                     
-                    CustomButton(title: "Let's go") {
+                    PalButton(title: "Let's go") {
                         viewModel.saveKey()
                     }
                     .padding(.top, 32)
@@ -63,10 +59,7 @@ struct WelcomeScreenView: View {
     
     private func buildInputView() -> some View {
         VStack(alignment: .leading) {
-            
-            Text("OpenAI Api key")
-                .padding([.top, .horizontal], 8)
-                .font(.custom("Merriweather-Regular", size: 12))
+            PalText(text: "OpenAI Api key", fontType: .regular, size: .small)
             
             TextField("sk-proj-***************************", text: $viewModel.apiKey)
                 .autocapitalization(.none)
@@ -75,15 +68,13 @@ struct WelcomeScreenView: View {
                 .padding(8)
                 .background(Color(.background))
                 .border(viewModel.isApiKeyValid ? .black : .red, width: 1)
-                .padding(.horizontal, 8)
             
             if viewModel.isApiKeyValid == false {
-                Text("Key is invalid")
-                    .padding(.horizontal, 8)
+                PalText(text: "Key is invalid", fontType: .regular, size: .small)
                     .foregroundColor(.red)
-                    .font(.custom("Merriweather-Regular", size: 12))
             }
         }
+        .padding([.top, .horizontal], 8)
     }
 }
 
