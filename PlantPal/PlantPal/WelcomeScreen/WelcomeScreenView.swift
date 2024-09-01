@@ -26,7 +26,7 @@ struct WelcomeScreenView: View {
                     PalText(text: "Your pocket botanist", fontType: .regular, size: .large)
                         .padding(.bottom, 4)
                     
-                    PalDivider()
+                    PalDivider(color: .welcomeScreen)
                     
                     PalText(text: """
                        Discover the world of plants at your

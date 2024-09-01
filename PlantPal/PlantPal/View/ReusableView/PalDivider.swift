@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct PalDivider: View {
+    
+    enum divaiderColor: String {
+        case mainView = "DividerColor"
+        case welcomeScreen = "DividerMainScreen"
+    }
+    
+    var color: divaiderColor
+    
     var body: some View {
         Rectangle()
-             .fill(Color(.divider))
+            .fill(Color(color.rawValue))
              .frame(height: 1) // Ustawiamy tylko wysokość
              .padding(.bottom, 8)
     }
 }
 
 #Preview {
-    PalDivider()
+    PalDivider(color: .mainView)
 }
